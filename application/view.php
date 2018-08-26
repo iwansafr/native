@@ -1,5 +1,5 @@
 <?php
-$page = @$_GET['page'];
+$page = @$_GET['view'];
 if(!empty($page))
 {
 	switch($page)

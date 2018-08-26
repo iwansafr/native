@@ -45,6 +45,7 @@ Class Db
 			$data            = $this->mysqli_protected->query($q);
 			$this->data      = $data;
 			$this->insert_id = @$this->mysqli_protected->insert_id;
+			echo $this->mysqli_protected->error."\n";
 			return $data;
 		}
 	}

@@ -1,13 +1,13 @@
 <?php
 $role = $db->query('SELECT * FROM role');
 $role = $db->result();
-include_once('user_save.php');
+// include_once('user_save.php');
 if(@intval($_GET['s']))
 {
 	echo 'data saved successfully';
 }
 ?>
-<form method="post">
+<form method="post" action="<?php echo base_url('user_save') ?>">
 	<table>
 		<tr>
 			<td>username</td>
